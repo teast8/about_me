@@ -1,3 +1,14 @@
-* {
-  color:red;
+header {
+  color: White;
+  background-color: black;
+  text-align:center;
+  font-size:50px;
+  display:block;
+}
+footer {
+  color: White;
+  background-color: black;
+  text-align:center;
+  font-size:50px;
+  display:block;
 }
