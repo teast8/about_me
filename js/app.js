@@ -6,14 +6,16 @@ var userName = prompt('Welcome everyone, you just entered Ty\s dope ass page, Wh
 
 alert('Hi, ' + userName + ', welcome! Let\'s see if you can answer some questions about Ty! Please answer yes/no or y/n.');
 
-var answer1 = prompt('Did Ty Play Soccer in College?');
-
-if (answer1.toLowerCase() === 'no' || answer1.toLowerCase() === 'n') {
-  alert('You got it right, ' + userName + '! Ty Did not play soccer in college.');
-  correctAnswers += 1;
-} else {
-  alert('Sorry, ' + userName + ', you got it wrong. Ty did not play soccer.');
+function questionOne () {
+  var answer1 = prompt('Did Ty Play Soccer in College?');
+  if (answer1.toLowerCase() === 'no' || answer1.toLowerCase() === 'n') {
+    alert('You got it right, ' + userName + '! Ty Did not play soccer in college.');
+    correctAnswers += 1;
+  } else {
+    alert('Sorry, ' + userName + ', you got it wrong. Ty did not play soccer.');
+  }
 }
+questionOne();
 
 var answer2 = prompt('Does Ty have 2 siblings?');
 
