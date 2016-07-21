@@ -66,27 +66,31 @@ function questionFive() {
 }
 questionFive();
 
-
-var age = 27;
-for (var i = 0; i < 4; i++) {
-  var ageAnswer = parseInt(prompt('How old is Ty?'));
-  console.log('i is equal to', i);
-  if ((i === 3) && (parseInt(ageAnswer) !== age)) {
-    alert ('You ran out of Chances, Ty\'s correct age is 27');
-    console.log(ageAnswer);
-  } else if (parseInt(ageAnswer) === age) {
-    alert ('Taiwan is' + age + '! Great guess.');
-    correctAnswers += 1;
-    console.log(ageAnswer);
-    break;
-  } else if (parseInt(ageAnswer) > age) {
-    alert('Sorry that is too high, Guess again.');
-    console.log(ageAnswer);
-  } else if (parseInt(ageAnswer) < age) {
-    alert('That answer is too low! try again');
-    console.log(ageAnswer);
+// Question 6 wrapped in a function by Ty and Bronwyn
+function questionSix() {
+  var age = 27;
+  for (var i = 0; i < 4; i++) {
+    var ageAnswer = parseInt(prompt('How old is Ty?'));
+    console.log('i is equal to', i);
+    if ((i === 3) && (parseInt(ageAnswer) !== age)) {
+      alert ('You ran out of Chances, Ty\'s correct age is 27');
+      console.log(ageAnswer);
+    } else if (parseInt(ageAnswer) === age) {
+      alert ('Taiwan is' + age + '! Great guess.');
+      correctAnswers += 1;
+      console.log(ageAnswer);
+      break;
+    } else if (parseInt(ageAnswer) > age) {
+      alert('Sorry that is too high, Guess again.');
+      console.log(ageAnswer);
+    } else if (parseInt(ageAnswer) < age) {
+      alert('That answer is too low! try again');
+      console.log(ageAnswer);
+    }
   }
 }
+questionSix();
+
 
 var city = ['chicago ', 'miami ', 'fort lauderdale ', 'peoria ', 'seattle ', 'tempe '];
 var guesses = 0;
