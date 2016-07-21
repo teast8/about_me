@@ -54,7 +54,8 @@ if (answer5.toLowerCase() === 'no' || answer5.toLowerCase() === 'n') {
 var age = 27;
 
 for (var i = 0; i < 4; i++) {
-  var ageAnswer = prompt('How old is Ty?');
+  var ageAnswer = parsInt(prompt('How old is Ty?'));
+  console.log('i is equal to', i);
   if ((i === 3) && (parseInt(ageAnswer) !== age)) {
     alert ('You ran out of Chances, Ty\'s correct age is 27');
     console.log(ageAnswer);
