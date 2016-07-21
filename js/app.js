@@ -42,13 +42,17 @@ function questionThree() {
 }
 questionThree();
 
-var answer4 = prompt('What is Ty favorite food?');
-if (answer4.toLowerCase() === 'seafood' || answer4.toLowerCase() === 'chinese food') {
-  alert('You got it right, ' + userName + '! Great Job, Ty loves seafood and Chinese food.');
-  correctAnswers += 1;
-} else {
-  alert('Wrong, ' + userName + '! Ty hates vegetables.');
+// Question 4 wrapped in a function by Ty and Bronwyn
+function questionFour() {
+  var answer4 = prompt('What is Ty favorite food?');
+  if (answer4.toLowerCase() === 'seafood' || answer4.toLowerCase() === 'chinese food') {
+    alert('You got it right, ' + userName + '! Great Job, Ty loves seafood and Chinese food.');
+    correctAnswers += 1;
+  } else {
+    alert('Wrong, ' + userName + '! Ty hates vegetables.');
+  }
 }
+questionFour();
 
 var answer5 = prompt('Did Ty run track as a kid?');
 
