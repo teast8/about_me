@@ -54,17 +54,20 @@ function questionFour() {
 }
 questionFour();
 
-var answer5 = prompt('Did Ty run track as a kid?');
-
-if (answer5.toLowerCase() === 'no' || answer5.toLowerCase() === 'n') {
-  alert('Great Job, ' + userName + '! You managed to guess the correct answer.');
-  correctAnswers += 1;
-} else {
-  alert('Sorry, ' + userName + ', Ty has never stepped foot on a track.');
+// Question 5  wrapped in a function by Ty and Bronwyn
+function questionFive() {
+  var answer5 = prompt('Did Ty run track as a kid?');
+  if (answer5.toLowerCase() === 'no' || answer5.toLowerCase() === 'n') {
+    alert('Great Job, ' + userName + '! You managed to guess the correct answer.');
+    correctAnswers += 1;
+  } else {
+    alert('Sorry, ' + userName + ', Ty has never stepped foot on a track.');
+  }
 }
+questionFive();
+
 
 var age = 27;
-
 for (var i = 0; i < 4; i++) {
   var ageAnswer = parseInt(prompt('How old is Ty?'));
   console.log('i is equal to', i);
