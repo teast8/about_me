@@ -49,7 +49,7 @@ function questionFour() {
     alert('You got it right, ' + userName + '! Great Job, Ty loves seafood and Chinese food.');
     correctAnswers += 1;
   } else {
-    alert('Wrong, ' + userName + '! Ty hates vegetables.');
+    alert('Wrong, ' + userName + '.');
   }
 }
 questionFour();
@@ -76,7 +76,7 @@ function questionSix() {
       alert ('You ran out of Chances, Ty\'s correct age is 27');
       console.log(ageAnswer);
     } else if (parseInt(ageAnswer) === age) {
-      alert ('Taiwan is' + age + '! Great guess.');
+      alert ('Taiwan is ' + age + '! Great guess.');
       correctAnswers += 1;
       console.log(ageAnswer);
       break;
@@ -91,29 +91,31 @@ function questionSix() {
 }
 questionSix();
 
-
-var city = ['chicago ', 'miami ', 'fort lauderdale ', 'peoria ', 'seattle ', 'tempe '];
-var guesses = 0;
-
-while (guesses < 7) {
-  var cityAnswer = prompt('What cities have Taiwan lived?').toLowerCase();
-  for (var i = 0; i < city.length; i++) {
-    if (cityAnswer === city[i]) {
-      alert('You got it Right!' + city);
-      correctAnswers += 1;
-      console.log(cityAnswer);
-      guesses = 7;
-      break;
+// Question 7 wrapped in a function by Ty and Bronwyn
+function questionSeven() {
+  var city = ['chicago', 'miami', 'fort lauderdale', 'peoria', 'seattle', 'tempe'];
+  var guesses = 0;
+  while (guesses < 7) {
+    var cityAnswer = prompt('What cities have Taiwan lived?').toLowerCase();
+    for (var i = 0; i < city.length; i++) {
+      if (cityAnswer === city[i]) {
+        alert('You got it Right!' + city);
+        correctAnswers += 1;
+        console.log(cityAnswer);
+        guesses = 7;
+        break;
+      }
     }
+    if (guesses !== 7){
+      alert('You got it wrong!');
+    }
+    guesses++;
   }
-  if (guesses !== 7){
-    alert('You got it wrong!');
+  if (guesses > 7) {
+    alert('You have ran out of guesses!' + city);
+    console.log(cityAnswer);
   }
-  guesses++;
 }
-if (guesses >= 7) {
-  alert('You have ran out of guesses!' + city);
-  console.log(cityAnswer);
-}
+questionSeven();
 
 alert('I hope you enjoyed the Game, ' + userName + '. You got ' + correctAnswers + ' out of 7 questions correct.');
