@@ -30,17 +30,19 @@ function questionTwo() {
 }
 questionTwo();
 
-var answer3 = prompt('What is Ty favorite color?');
-
-if (answer3.toLowerCase() === 'red' || answer3.toLowerCase() === 'green') {
-  alert('You got it right, ' + userName + '! You picked to one of Ty favorite color.');
-  correctAnswers += 1;
-} else {
-  alert('Sorry better luck next time, ' + userName + '!');
+// Question 3 wrapped in a function by Ty and Bronwyn
+function questionThree() {
+  var answer3 = prompt('What is Ty favorite color?');
+  if (answer3.toLowerCase() === 'red' || answer3.toLowerCase() === 'green') {
+    alert('You got it right, ' + userName + '! You picked to one of Ty favorite color.');
+    correctAnswers += 1;
+  } else {
+    alert('Sorry better luck next time, ' + userName + '!');
+  }
 }
+questionThree();
 
 var answer4 = prompt('What is Ty favorite food?');
-
 if (answer4.toLowerCase() === 'seafood' || answer4.toLowerCase() === 'chinese food') {
   alert('You got it right, ' + userName + '! Great Job, Ty loves seafood and Chinese food.');
   correctAnswers += 1;
@@ -79,7 +81,7 @@ for (var i = 0; i < 4; i++) {
   }
 }
 
-var city = ['chicago' , 'miami' , 'fort lauderdale' , 'peoria' , 'seattle' , 'tempe'];
+var city = ['chicago ', 'miami ', 'fort lauderdale ', 'peoria ', 'seattle ', 'tempe '];
 var guesses = 0;
 
 while (guesses < 7) {
