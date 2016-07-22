@@ -95,6 +95,7 @@ questionSix();
 function questionSeven() {
   var city = ['chicago', 'miami', 'fort lauderdale', 'peoria', 'seattle', 'tempe'];
   var guesses = 0;
+  var timeOut = true;
   while (guesses < 7) {
     var cityAnswer = prompt('What cities have Taiwan lived?').toLowerCase();
     for (var i = 0; i < city.length; i++) {
@@ -102,6 +103,7 @@ function questionSeven() {
         alert('You got it Right!' + city);
         correctAnswers += 1;
         console.log(cityAnswer);
+        timeOut = false;
         guesses = 7;
         break;
       }
@@ -111,7 +113,7 @@ function questionSeven() {
     }
     guesses++;
   }
-  if (guesses > 7) {
+  if (timeOut) {
     alert('You have ran out of guesses!' + city);
     console.log(cityAnswer);
   }
