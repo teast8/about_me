@@ -16,7 +16,7 @@ footer {
 body {
   color: #F8F8FF;
   font family: "anonymous pro" , sans-serif;
-  background-image:url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/01/1280x1024-backgrounds-11.jpg);
+  background-image:url(https://images4.alphacoders.com/741/74166.jpg);
   width:100%;
   margin: 0;
   padding: 0;
@@ -47,4 +47,20 @@ nav {
   background-color: #333;
   margin: 0;
   overflow: hidden;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+nav > ul > li > a {
+  color: #aaa;
+  background-color: #FFO;
+  display: block;
+  line-height: 2em;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
 }
