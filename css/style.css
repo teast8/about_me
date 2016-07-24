@@ -3,18 +3,22 @@ header {
   text-align:center;
   font-size:50px;
   display:block;
+  position:absolute;
+
 }
 footer {
   color: white;
   text-align:center;
   font-size:50px;
   display:block;
+  float: right;
 }
 body {
   color: #F8F8FF;
   font family: "anonymous pro" , sans-serif;
-  background-image:url(http://www.hdwallpapers.in/walls/hi_tech_planet-wide.jpg);
+  background-image:url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/01/1280x1024-backgrounds-11.jpg);
   width:100%;
+  margin:auto;
   height:100%;
   background-image:  );
   -moz-background-size: cover;
@@ -34,3 +38,21 @@ img src {
     width:540px; /* you can use % */
     height: auto;
 }
+main {
+  margin-top: 80px;
+}
+h2 {
+   max-width: 50%;
+ }
+ div.content{
+   max-width: 50%;
+ }
+ .navbar-custom {
+   margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: "anonymous-pro", sans-serif;
+ }
+ .navbar-fixed-top {
+   top: 0;
+   border-width: 0 0 1px;
+ }

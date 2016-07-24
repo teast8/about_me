@@ -103,7 +103,6 @@ function questionSeven() {
         alert('You got it Right!' + city);
         correctAnswers += 1;
         console.log(cityAnswer);
-        timeOut = false;
         guesses = 7;
         break;
       }
