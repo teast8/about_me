@@ -18,7 +18,9 @@ body {
   font family: "anonymous pro" , sans-serif;
   background-image:url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/01/1280x1024-backgrounds-11.jpg);
   width:100%;
-  margin:auto;
+  margin: 0;
+  padding: 0;
+  font-size: 15;
   height:100%;
   background-image:  );
   -moz-background-size: cover;
@@ -41,18 +43,8 @@ img src {
 main {
   margin-top: 80px;
 }
-h2 {
-   max-width: 50%;
- }
- div.content{
-   max-width: 50%;
- }
- .navbar-custom {
-   margin-bottom: 0;
-    text-transform: uppercase;
-    font-family: "anonymous-pro", sans-serif;
- }
- .navbar-fixed-top {
-   top: 0;
-   border-width: 0 0 1px;
- }
+nav {
+  background-color: #333;
+  margin: 0;
+  overflow: hidden;
+}
