@@ -1,34 +1,40 @@
-header {
-  color: white;
-  text-align:center;
-  font-size:100px;
-  display:block;
-  position:relative;
-  font-style: italic;
-  font-family: sans-serif;
-  /*font-size-adjust: auto;*/
+/** {
+  outline: 1px dotted orange;
+}*/
 
-}
-/*footer {
-  color: white;
-  text-align:center;
-  font-size:50px;
-  display:block;
-  float: right;*/
-}
 body {
+  background-image: url(https://images4.alphacoders.com/741/74166.jpg);
   color: #F8F8FF;
   font family: "anonymous pro" , sans-serif;
-  background-image:url(https://images4.alphacoders.com/741/74166.jpg);
   width:100%;
   margin: 0;
   padding: 0;
   font-size: 15;
   height:100%;
-  
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size:
+}
+.SocialMedia {
+  display: inline-block;
+}
+header {
+  color: white;
+  text-align: left;
+  font-size: 30px;
+  display: block;
+  position: relative;
+  font-style: normal;
+  font-family: times, serif;
+  /*font-size-adjust: auto;*/
+
+}
+/*footer {
+  color: white;
+  text-align: center;
+  font-size:50px;
+  display:block;
+  float: right;*/
 }
 html {
   width:100%;
@@ -43,7 +49,14 @@ img src {
     width:540px; /* you can use % */
     height: auto;
 }
-main {
+
+header {
+  display:inline-block;
+  /*float: left;*/
+  font-size: 50px;
+  margin-left: auto;
+}
+ {
   margin-top: 80px;
 }
 nav {
@@ -52,6 +65,10 @@ nav {
   overflow: hidden;
   text-align: center;
 }
+/*.content {
+    background: rgba(76, 175, 80, 0.5);
+    padding: 10px 25px 10px 25px;
+    margin: -20px;*/
 nav ul {
   margin: 0;
   padding: 0;
